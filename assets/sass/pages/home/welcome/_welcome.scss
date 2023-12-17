@@ -1,0 +1,231 @@
+.home_welcome_wrapper-div {
+  background-color: #111111;
+  position: relative;
+  background-image: url(/images/home/patern1.png);
+  background-repeat: repeat-x;
+  background-position: bottom;
+}
+
+.home_welcome_linear {
+  position: absolute;
+  top: -50px;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: #111111;
+  background-image: radial-gradient(closest-side at 50% 24%,
+      $gray-color,
+      #111111);
+  width: 80%;
+  height: 320px;
+}
+
+.welcome_section_patern_1st {
+  position: absolute;
+  right: 0;
+  top: -10%;
+  z-index: -1;
+
+  @include tablet {
+    top: 3%;
+  }
+
+  @include mobile {
+    top: 0;
+  }
+
+  &>img {
+    width: 100%;
+    max-width: 250px;
+    max-height: 658px;
+
+    @include tablet {
+      max-width: 150px;
+      max-height: 354px;
+    }
+
+    @include mobile {
+      max-width: 75px;
+      max-height: 176px;
+    }
+  }
+}
+
+.welcome_section_patern_2nd {
+  position: absolute;
+  left: 0;
+  bottom: -1%;
+  z-index: -1;
+
+  @include tablet {
+    bottom: 5%;
+  }
+
+  @include mobile {
+    top: -5%;
+  }
+
+  &>img {
+    width: 100%;
+    max-width: 220px;
+    max-height: 658px;
+
+    @include tablet {
+      max-width: 170px;
+      max-height: 362px;
+    }
+
+    @include mobile {
+      max-width: 91px;
+      max-height: 177px;
+    }
+  }
+}
+
+.home_welcome_title_sizing {
+  @include all_fonts_styles(34px, 500, SSansBold, $black-color);
+
+  @include mobile {
+    @include all_fonts_styles(24px, 500, SSansBold, $black-color);
+  }
+}
+
+.home_welcome_text_sizing {
+  @include all_fonts_styles(13px, 600, SSansLight, $black-color);
+
+  @include mobile {
+    @include all_fonts_styles(14px, 600, SSansLight, $black-color);
+  }
+
+  line-height: 1.5rem;
+}
+
+.background_handler {
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  // & > div {
+  //   backdrop-filter: blur(10px);
+  // }
+}
+
+.home_minivans_caontainer {
+  background-color: $yellow-color;
+}
+
+.welcome_category {
+  position: relative;
+  transform: translate(5%, 0%);
+
+  @include mobile {
+    transform: translate(0%, 0%);
+  }
+}
+
+.home-welcome_title {
+  z-index: 2;
+  position: relative;
+  background-color: $black-color;
+  @include all_fonts_styles(34px, 500, SSansBold, $white-color);
+
+  @include tablet {
+    @include all_fonts_styles(24px, 500, SSansBold, $white-color);
+  }
+
+  @include mobile {
+    @include all_fonts_styles(24px, 500, SSansBold, $white-color);
+  }
+}
+
+.home-welcome_txt {
+  z-index: 2;
+  position: relative;
+  // background-color: $black-color;
+  @include all_fonts_styles(24px, 500, SSansBold, $black-color);
+
+  @include tablet {
+    @include all_fonts_styles(20px, 500, SSansBold, $black-color);
+  }
+
+  @include mobile {
+    @include all_fonts_styles(20px, 500, SSansBold, $black-color);
+  }
+}
+
+.home-welcome_img_container {
+  position: relative;
+  border-radius: 20px;
+
+  img {
+    border-radius: 20px;
+    position: relative;
+    z-index: 2;
+    object-fit: cover;
+  }
+
+  &::after {
+    content: "";
+    top: -2.5%;
+    right: 0;
+    background-color: #cc2a22;
+    height: 50px;
+    width: 147px;
+    z-index: 1;
+    border-radius: 20px 20px 0 0;
+    position: absolute;
+  }
+}
+
+.home-finance_img_container {
+  position: relative;
+  border-radius: 20px;
+
+  img {
+    border-radius: 20px;
+    position: relative;
+    z-index: 2;
+    object-fit: cover;
+  }
+
+  &::after {
+    content: "";
+    top: -8px;
+    left: 0;
+    background-color: $white-color;
+    height: 50px;
+    width: 147px;
+    z-index: 1;
+    border-radius: 20px 20px 0 0;
+    position: absolute;
+  }
+}
+
+.home_finance_bg {
+  background-image: url("/images/home/Group 176.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.home_finance_title_sizing {
+  @include all_fonts_styles(34px, 500, SSansBold, $white-color);
+
+  @include mobile {
+    @include all_fonts_styles(24px, 500, SSansBold, $white-color);
+  }
+}
+
+.home_finance_text_sizing {
+  @include all_fonts_styles(14px, 400, SSansLight, $white-color);
+
+  @include mobile {
+    @include all_fonts_styles(16px, 400, SSansLight, $white-color);
+  }
+
+  line-height: 1.5rem;
+}
+
+.home_finance_btn {
+  background-color: $white-color;
+  border-radius: 10px;
+  @include all_fonts_styles(16px, 400, SSansLight, $x-red-color);
+}

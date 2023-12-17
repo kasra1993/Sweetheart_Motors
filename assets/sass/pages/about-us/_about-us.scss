@@ -1,0 +1,131 @@
+.apply_image {
+  position: absolute;
+  top: 5%;
+  left: 5%;
+  font-weight: bold;
+  z-index: 5;
+  font-size: 25px;
+}
+
+.value_image {
+  position: absolute;
+  top: 2%;
+  left: 2%;
+  font-weight: bold;
+}
+
+.value2_image {
+  position: absolute;
+  top: 10%;
+  left: 2%;
+  font-weight: bold;
+}
+
+.contact_image {
+  position: absolute;
+  bottom: 2%;
+  left: 0%;
+  font-weight: bold;
+}
+
+.linkto_img_containerrr {
+  height: 100%;
+  width: 100%;
+}
+
+.linkto_img_containerrr img {
+  //position: absolute;
+  right: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+
+  @include mobile {
+    height: auto;
+  }
+}
+
+.linkto_img_containerrr:after {
+  content: "";
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background: #1b6939;
+  opacity: 0.8;
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+}
+
+.about_us_banner_text {
+  @include all_fonts_styles(38px, $fw-bold, AltoneBold, #f60405);
+
+  @include tablet {
+    @include all_fonts_styles(30px, $fw-bold, AltoneBold, #f60405);
+  }
+
+  @include mobile {
+    @include all_fonts_styles(18px, $fw-bold, AltoneBold, #f60405);
+  }
+}
+
+.banner_text_position {
+  position: absolute;
+  top: 5vh;
+  right: 0;
+  z-index: 10;
+
+  @include tablet {
+    top: 0;
+  }
+
+  @include mobile {
+    top: 0;
+  }
+}
+
+.about_us_text {
+  @include all_fonts_styles(16px, $fw-bold, AltoneRegular, $black-color);
+}
+
+.aboutus_h4__title {
+  @include xldesktop {
+    @include all_fonts_styles(34px, $fw-bold, inherit, $black-color);
+  }
+
+  @include desktop {
+    @include all_fonts_styles(34px, $fw-bold, inherit, $black-color);
+  }
+
+  @include tablet {
+    @include all_fonts_styles(34px, $fw-bold, inherit, $black-color);
+  }
+
+  @include mobile {
+    @include all_fonts_styles(24px, $fw-bold, inherit, $black-color);
+  }
+}
+
+.aboutus_h4__title_red {
+  @include xldesktop {
+    @include all_fonts_styles(34px, $fw-bold, inherit, #cc2a22);
+  }
+
+  @include desktop {
+    @include all_fonts_styles(34px, $fw-bold, inherit, #cc2a22);
+  }
+
+  @include tablet {
+    @include all_fonts_styles(34px, $fw-bold, inherit, #cc2a22);
+  }
+
+  @include mobile {
+    @include all_fonts_styles(24px, $fw-bold, inherit, #cc2a22);
+  }
+}
+
+.about_us_image {
+  box-shadow: 0px 0px 30px #00000029;
+  border-radius: 20px;
+}

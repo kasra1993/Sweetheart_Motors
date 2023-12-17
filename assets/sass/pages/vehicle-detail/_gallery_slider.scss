@@ -1,0 +1,151 @@
+.gallery_slider_div__container {
+  background: url("/images/vehicle-detail/texture.png");
+  background-repeat: no-repeat;
+}
+.gallery_slider_p__price {
+  @include all_fonts_styles($fs-xl, 400, Corbert, $yellow-color);
+}
+.gallery_slider_p_price__crossline {
+  position: relative;
+  width: fit-content;
+  &::before {
+    content: "";
+    position: absolute;
+    top: 20px;
+    left: 0;
+    width: 110%;
+    height: 3px;
+    background-color: $white-color;
+    transform: rotate(-10deg);
+  }
+}
+.gallery_slider_div__img_container {
+  position: relative;
+  .gallery_slider_div__img_content_container {
+    & > div:first-child {
+      min-height: 25rem;
+      @include mobile {
+        & {
+          // min-height: 17rem;
+          max-width: 20rem;
+        }
+      }
+      @media screen and (max-width: 468px) {
+        & {
+          min-height: 17rem;
+          max-width: 20rem;
+        }
+      }
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      @include hexagon_generator($x-gray-color, 100%, 100%);
+      & > img {
+        // -webkit-clip-path: polygon(
+        //   25% 0%,
+        //   75% 0%,
+        //   100% 50%,
+        //   75% 100%,
+        //   25% 100%,
+        //   0% 50%
+        // );
+        // clip-path: polygon(
+        //   25% 0%,
+        //   75% 0%,
+        //   100% 50%,
+        //   75% 100%,
+        //   25% 100%,
+        //   0% 50%
+        // );
+        object-fit: cover;
+        width: 100%;
+        height: 100%;
+      }
+    }
+  }
+}
+@include desktop {
+  .gallery_slider_div__container {
+    background-position: -30vw center;
+  }
+  .gallery_slider_div__img_container {
+    max-height: 449.79px;
+    max-width: 519.5px;
+  }
+}
+@include tablet {
+  .gallery_slider_div__container {
+    background-position: center;
+    background-size: cover;
+  }
+  .gallery_slider_div__img_container {
+    .gallery_slider_div__img_content_container {
+      & > div:first-child {
+        max-height: 449.79px;
+        max-width: 519.5px;
+      }
+    }
+  }
+}
+@include mobile {
+  .gallery_slider_div__container {
+    background-position: center;
+    background-size: cover;
+  }
+  .gallery_slider_div__img_container {
+    .gallery_slider_div__img_content_container {
+      & > div:first-child {
+        max-height: 449.79px;
+        max-width: 519.5px;
+      }
+    }
+  }
+}
+.gallery_slider_i_fullscreen__icon {
+  color: $white-color;
+  cursor: pointer;
+  position: absolute;
+  bottom: 20px;
+  right: 0;
+  transform: scale(1);
+  transition: transform ease 0.5s;
+  &:hover {
+    transform: scale(1.1);
+    transition: transform ease 0.5s;
+  }
+  @include tablet {
+    & {
+      right: 50px;
+    }
+  }
+}
+.gallery_slider_modal__div_container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background-color: rgba($color: #000000, $alpha: 0.7);
+  z-index: 1000;
+}
+.gallery_slider_i_close_fullscreen__icon {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  color: $white-color;
+  cursor: pointer;
+}
+.gallery_slider_nav_button__style {
+  color: $white-color;
+  background-color: transparent;
+  border: none;
+  position: fixed;
+  top: 50%;
+  z-index: 10000;
+}
+.gallery_slider_prev_button__style {
+  left: 0;
+}
+.gallery_slider_next_button__style {
+  right: 0;
+}

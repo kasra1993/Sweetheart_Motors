@@ -1,0 +1,180 @@
+.inventory_div__car_iamge_conatiner {
+  position: relative;
+  border-radius: 20px;
+
+  img {
+    position: relative;
+    z-index: 2;
+    object-fit: contain;
+  }
+
+  &::after {
+    content: "";
+    top: -8px;
+    left: 0;
+    background-color: #CC2A22;
+    height: 30px;
+    width: 147px;
+    z-index: 1;
+    border-radius: 20px 20px 0 0;
+    position: absolute;
+  }
+}
+
+.inventory_details_container {
+  background-color: #fff;
+  box-shadow: 0px 0px 30px #00000029;
+  border-radius: 20px
+}
+
+.inventory_div__cell {
+  @include all_fonts_styles(13px, 400, inherit, #4e4d4d);
+}
+
+.inventory_a__title {
+  @include all_fonts_styles(18px, 900, inherit, #1E1E1E);
+
+  &:hover {
+    @include all_fonts_styles(18px, 900, inherit, #1E1E1E);
+  }
+}
+
+.inventory_button__filter {
+  @include hexagon_generator($yellow-color, 45px, 39px);
+}
+
+
+.inventory_p__sellprice_line {
+  position: relative;
+
+  &::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 100%;
+    height: 2px;
+    transform: rotate(5deg) translateX(-50%) translateY(-50%);
+    background-color: red;
+  }
+}
+
+.inventory_p__price {
+  @include all_fonts_styles(18px, 700, inherit, #CC2A22);
+}
+
+.inventory_p__car_special {
+  @include all_fonts_styles(18px, 700, inherit, #CC2A22);
+}
+
+
+
+.classic_inventory {
+  @include mobile {
+    background-color: #fff;
+  }
+}
+
+.inventory_patern {
+  position: absolute;
+  bottom: -3% !important;
+  height: 30px !important;
+  width: 25%;
+  left: 50% !important;
+  transform: translateX(-50%);
+  background-color: $x-light-gray;
+  z-index: 5;
+
+  @include mobile {
+    bottom: -2% !important;
+  }
+}
+
+.inventory_soldImage-style {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+@include xldesktop {
+  .border_right_style {
+    border-right: 1px solid #E8E8E8;
+  }
+
+  .border_right_style_detail {
+    border-right: none;
+  }
+
+
+
+
+}
+
+
+
+@include desktop {
+  .border_right_style {
+    border-right: 1px solid #E8E8E8;
+  }
+
+  .border_right_style_detail {
+    border-right: none;
+  }
+
+
+
+
+
+}
+
+@include tablet {
+  .border_right_style {
+    border-right: 1px solid #E8E8E8;
+  }
+
+  .border_right_style_detail {
+    border-right: 1px solid #E8E8E8;
+  }
+
+
+}
+
+@include mobile {
+  .border_right_style {
+    border-right: none;
+  }
+
+  .border_right_style_detail {
+    border-right: none;
+  }
+
+
+}
+
+.mobile_filter_border {
+  border-bottom: 1px solid #000;
+}
+
+.button_position {
+  position: relative;
+  // bottom: -50px;
+}
+
+.inventory_div__cell_border {
+  &>div {
+    border-bottom: 1px solid #E8E8E8;
+  }
+
+  &>div:last-child {
+    border-bottom: none;
+
+    @include tablet {
+      border-bottom: 1px solid #E8E8E8;
+    }
+
+    @include mobile {
+      border-bottom: 1px solid #E8E8E8;
+    }
+
+  }
+}

@@ -1,0 +1,107 @@
+.contact_us_container {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 70% auto;
+  background-attachment: fixed;
+  width: 100%;
+  z-index: -1;
+}
+.contact_us_div__container {
+  & > div:nth-child(odd) {
+    background-color: $yellow-color;
+    height: 20.6875rem;
+    .contact_us_div_content__container {
+      & > h5 {
+        @include all_fonts_styles(
+          $fs-xxmd,
+          $fw-medium,
+          Montserrat,
+          $black-color
+        );
+      }
+      & > p {
+        @include all_fonts_styles($fs-md, $fw-normal, Montserrat, $black-color);
+      }
+    }
+  }
+  & > div:nth-child(even) {
+    background-color: rgba($color: $white-color, $alpha: 0.1);
+    height: 20.6875rem;
+    .contact_us_div_content__container {
+      & > h5 {
+        @include all_fonts_styles(
+          $fs-xxmd,
+          $fw-medium,
+          Montserrat,
+          $white-color
+        );
+      }
+      & > p {
+        @include all_fonts_styles($fs-md, $fw-normal, Montserrat, $white-color);
+      }
+    }
+  }
+  & > div:nth-child(3),
+  > div:nth-child(4) {
+    background-color: transparent;
+    height: 20.6875rem;
+  }
+  & > address {
+    @include all_fonts_styles($fs-xxmd, $fw-medium, Montserrat, $black-color);
+  }
+  @include tablet {
+    & > div:nth-child(7) {
+      background-color: rgba($color: $white-color, $alpha: 0.1);
+      height: 20.6875rem;
+      .contact_us_div_content__container {
+        & > h5 {
+          @include all_fonts_styles(
+            $fs-xxmd,
+            $fw-medium,
+            Montserrat,
+            $white-color
+          );
+        }
+        & > p {
+          @include all_fonts_styles(
+            $fs-md,
+            $fw-normal,
+            Montserrat,
+            $white-color
+          );
+        }
+      }
+    }
+    & > div:nth-child(8) {
+      background-color: $yellow-color;
+      height: 20.6875rem;
+      .contact_us_div_content__container {
+        & > h5 {
+          @include all_fonts_styles(
+            $fs-xxmd,
+            $fw-medium,
+            Montserrat,
+            $black-color
+          );
+        }
+        & > p {
+          @include all_fonts_styles(
+            $fs-md,
+            $fw-normal,
+            Montserrat,
+            $black-color
+          );
+        }
+      }
+    }
+  }
+}
+.contact_us_img__icon {
+  width: 3.2rem;
+  height: auto;
+  object-fit: contain;
+}
+.contact_us_button__style {
+  @include yellow_button(5px);
+  @include all_fonts_styles($fs-md, $fw-normal, Montserrat, $x-gray-color);
+}

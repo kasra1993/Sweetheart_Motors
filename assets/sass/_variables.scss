@@ -1,0 +1,86 @@
+//colors
+$white-color: #ffffff;
+$light-black-color: #1c252b;
+$x-light-black-color: #283037;
+$x-dark-gray-color: #1e3848;
+$xx-dark-gray-color: #1d252c;
+$dark-gray-color: #4b5359;
+// $gray-color: #40474d;
+// $x-gray-color: #707070;
+$xx-gray-color-alfa: 0.1;
+$xxx-gray-color-alfa: 0.2;
+$xxxx-gray-color-alfa: 0.05;
+$xx-gray-color: rgba($white-color, $xx-gray-color-alfa);
+$xxx-gray-color: rgba($white-color, $xxx-gray-color-alfa);
+$xxxx-gray-color: rgba($white-color, $xxxx-gray-color-alfa);
+$light-gray-color: #545a5f;
+$xx-light-gray-color: #adcad6;
+$dark-blue-color: #354c5b;
+$x-dark-blue-color: #1e3848;
+$blue-color: #3c91e6;
+$light-blue-color: #3e92cc;
+$light-red-color: #bf1e2e;
+$red-color: #ff0000;
+$yellow-x-color: #fdc101;
+$yellow-color: #e9bd1d;
+//new colors
+$x-red-color: #cc2a22;
+$light-x-gray-color: #f7f7f7;
+$light-xx-gray-color: #bbbbbb;
+$light-xxx-gray-color: #f6f6f6;
+$dark-x-gray-color: #666;
+$dark-xx-gray-color: #313233;
+$medium-blue-color: #1880d6;
+$gray-color: #414141;
+//$yellow-color: #ffbb00;
+$x-gray-color: #d2d2d4;
+$x-light-gray: #f2f2f2;
+$black-color: #000;
+$dark-color: #1f262e;
+$darker-color: #0f0f0f;
+$x-mdedium-blue-color: #254ef4;
+$x-light-blue-color: #e8eef3;
+$light-blue-color: #d0dce7;
+$xxx-gray-color: #414141;
+$xxxy-gray-color: #c8c8c8;
+//font size
+$fs-xxs: 0.625rem; //10px
+$fs-xs: 0.75rem; //12px
+$fs-sm: 0.875rem; //14px
+$fs-md: 1rem; //16px
+
+$fs-xmd: 1.125rem; //18px
+$fs-txmd: 0.9375rem; //15px
+$fs-mxmd: 0.75rem; //18px
+
+$fs-xxmd: 1.25rem; //20px
+$fs-xl: 1.5625rem; //25px
+$fs-xxxmd: 1.75rem; //28px
+$fs-xxxl: 2.125rem; //34px
+
+$fs-mlg: 1.875rem; //30px
+$fs-tmlg: 1.6875rem; //27px
+$fs-mmlg: 1.5rem; //24px
+
+$fs-mxl: 2.5rem; //40px
+$fs-tmxl: 2.3125rem; //37px
+$fs-mmxl: 2.125rem; //34px
+
+$fs-xxxxl: 3.125rem; //50px
+$fs-txxxxl: 2.9375rem; //47px
+$fs-mxxxxl: 2.75rem; //44px
+
+$fs-xxl: 4.375rem; //70px
+$fs-txxl: 4.1875rem; //67px
+$fs-mxxl: 4rem; //64px
+
+$fs-5xl: 3.25rem; //52px
+
+//font weight
+$fw-light: 300;
+$fw-normal: 400;
+$fw-medium: 500;
+$fw-semibold: 600;
+$fw-extrabold: 700;
+$fw-black: 800;
+$fw-bold: 900;

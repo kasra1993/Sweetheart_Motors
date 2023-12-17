@@ -1,0 +1,16 @@
+.home_search_input-style {
+  position: relative;
+  background-color: #707070 !important;
+  color: $white-color;
+  &::placeholder {
+    @include all_fonts_styles($fs-md, $fw-extrabold, inherit, $white-color);
+  }
+}
+.result-input-simple-search {
+  position: absolute;
+  max-height: 400px;
+  top: 3rem;
+  overflow: hidden;
+  overflow-y: scroll;
+  z-index: 100;
+}

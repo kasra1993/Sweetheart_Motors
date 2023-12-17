@@ -1,0 +1,612 @@
+// .eforms_input_select_container::placeholder {
+//   outline: none;
+//   box-shadow: none;
+//   @include all_fonts_styles(0.875rem, 500, SSans, #000efe);
+// }
+.eforms_div__container {
+  border: none;
+  border-radius: 10px;
+}
+
+.eforms_modal_div__container {
+  background-color: $x-dark-blue-color;
+  border: none;
+  border-radius: 10px;
+}
+
+.eforms_input_container,
+.eforms_input_container:focus {
+  border: 1px solid #838383;
+  background-color: transparent;
+  border-radius: 10px !important;
+  height: 40px;
+  -webkit-box-shadow: 5px 5px 8px -10px rgba(0, 0, 0, 0.35);
+  box-shadow: 5px 5px 8px -10px rgba(0, 0, 0, 0.35);
+  @include all_fonts_styles(14px, $fw-normal, SSans, #1E1E1E);
+
+  &::placeholder {
+    @include all_fonts_styles(14px, $fw-normal, SSans, #1E1E1E);
+  }
+
+  &:disabled {
+    background-color: rgba($color: $gray-color, $alpha: 0.5) !important;
+    color: $white-color !important;
+  }
+}
+
+.eforms_textarea_container,
+.eforms_textarea_container:focus {
+  border: 1px solid #838383;
+  background-color: transparent;
+  border-radius: 10px !important;
+  @include all_fonts_styles(14px, $fw-normal, inherit, #1e1e1e);
+
+  &::placeholder {
+    @include all_fonts_styles(14px, $fw-normal, inherit, #1e1e1e);
+  }
+
+  &:disabled {
+    background-color: rgba($color: $gray-color, $alpha: 0.5) !important;
+    color: $white-color !important;
+  }
+}
+
+.eforms_input_select_container,
+.eforms_input_select_container:focus {
+  border-radius: 0 !important;
+  height: 42px;
+  border: 1px solid #1e1e1e;
+  background-color: transparent;
+  @include all_fonts_styles(14px, $fw-normal, inherit, #1e1e1e);
+
+  &::placeholder {
+    opacity: 0.7;
+    @include all_fonts_styles(14px, $fw-normal, inherit, #1e1e1e);
+  }
+
+  &:disabled {
+    background-color: rgba($color: $gray-color, $alpha: 0.5) !important;
+    color: $white-color !important;
+  }
+}
+
+.financial_button__modal_button_selected {
+  border: 1px solid $medium-blue-color !important;
+  color: $white-color !important;
+
+  &::before {
+    background-color: #615e5f !important;
+  }
+}
+
+@include desktop {
+  .eform_h4__form_header {
+    @include all_fonts_styles(1.875rem, 400, SSans, #000);
+  }
+}
+
+@include tablet {
+  .eform_h4__form_header {
+    @include all_fonts_styles(1.775rem, 400, SSans, #000);
+  }
+
+  .special_cars_img__content {
+    min-height: 229px;
+    border-radius: 15px;
+    margin-top: 0.5rem;
+    object-fit: cover;
+  }
+}
+
+@include mobile {
+  .eform_h4__form_header {
+    @include all_fonts_styles(1.775rem, 400, SSans, #000);
+  }
+
+  .special_cars_img__content {
+    min-height: 229px;
+    border-radius: 15px;
+    margin-top: 0.5rem;
+    object-fit: cover;
+  }
+}
+
+.eform_main_header-style {
+  position: relative !important;
+  width: 100%;
+  white-space: nowrap;
+}
+
+.eform_main_header-style::after {
+  content: " ";
+  width: 100%;
+  height: 2px;
+  background-color: #f4f4f4;
+  margin: 0 10px;
+}
+
+.eform_button__submit {
+  width: 100%;
+  position: relative;
+  font-family: SSans;
+  font-weight: 400;
+  font-size: 20px;
+  letter-spacing: 0.05em;
+  border-radius: 0;
+  border: none;
+  background: transparent linear-gradient(315deg, #1b6939 0%, #2aa258 100%) 0% 0% no-repeat padding-box;
+  color: #000;
+  overflow: hidden;
+}
+
+.eform_button__submit svg {
+  width: 1.1em;
+  height: 1.1em;
+  margin-right: 0.5em;
+}
+
+.eform_button__submit span {
+  color: #000;
+  position: relative;
+  z-index: 1;
+  display: inline-flex;
+  align-items: center;
+  padding: 0.8em 1.2em 0.8em 1.05em;
+}
+
+// .eform_button__submit:hover {
+//   span {
+//     color: #000;
+//   }
+// }
+
+.eform_button__submit::before,
+.eform_button__submit::after {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 0;
+}
+
+.eform_button__submit::before {
+  content: "";
+  color: #000;
+  background: transparent linear-gradient(315deg, #1b6939 0%, #2aa258 100%) 0% 0% no-repeat padding-box;
+  width: 120%;
+  left: -10%;
+  // transform: skew(30deg);
+  // transition: transform 0.4s cubic-bezier(0.3, 1, 0.8, 1);
+}
+
+.eform_button__submit:hover::before {
+  transform: translate3d(100%, 0, 0);
+}
+
+.eform_button__submit:active {
+  transform: scale(0.95);
+}
+
+.eform_button__direction {
+  width: 100%;
+  height: 45px;
+  background-color: transparent;
+  @include all_fonts_styles($fs-xxmd, $fw-extrabold, inherit, $yellow-color);
+  border: 1px solid $yellow-color;
+  border-radius: 0 !important;
+
+  &:hover {
+    color: $black-color !important;
+    background-color: $yellow-color !important;
+  }
+}
+
+.eforms_modal__container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.4);
+  backdrop-filter: blur(2px);
+  z-index: 1000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.modal_close_button__style {
+  background-color: transparent;
+  border: none;
+  box-shadow: none;
+  color: $black-color;
+}
+
+.eforms_modal_button__style {
+  @include yellow_button(5px);
+  @include all_fonts_styles($fs-md, $fw-medium, Montserrat, $x-dark-blue-color);
+  width: 100%;
+}
+
+.eforms_modal_input_container,
+.eforms_modal_input_container:focus {
+  border: none;
+  border-radius: 5px;
+  background-color: $dark-blue-color;
+  @include all_fonts_styles($fs-sm, $fw-normal, Montserrat, $white-color);
+
+  &::placeholder {
+    opacity: 0.5;
+    @include all_fonts_styles($fs-sm, $fw-normal, Montserrat, $white-color);
+  }
+
+  &:disabled {
+    background-color: rgba($color: transparent, $alpha: 0.5) !important;
+    color: $white-color !important;
+  }
+}
+
+.eforms_header_div__container {
+  background-image: url("/images/common/e-forms/eforms-polygan.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: auto;
+  min-width: 31.52rem;
+  height: 27rem;
+
+  @include tablet {
+    & {
+      min-width: 27rem;
+      background-size: 100% auto;
+    }
+  }
+
+  @include mobile {
+    & {
+      min-width: 10rem;
+      background-size: 100% auto;
+    }
+  }
+}
+
+.eforms_header_img__container {
+  width: 100%;
+
+  &>img {
+    width: 100%;
+    border-radius: 20px;
+    box-shadow: 0px 3px 30px #00000029;
+  }
+
+  &::after {
+    content: "";
+    top: -8px;
+    left: 0;
+    background-color: #CC2A22;
+    height: 30px;
+    width: 147px;
+    z-index: -1;
+    border-radius: 20px 20px 0 0;
+    position: absolute;
+  }
+}
+
+.eforms_header__container {
+  @include tablet {}
+
+  width: 100%;
+
+  &>img {
+    width: 100%;
+    height: 111px;
+    object-fit: cover;
+
+    @include tablet {
+      height: 170px;
+    }
+
+    @include mobile {
+      height: 80px;
+    }
+  }
+}
+
+.header_pattern {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+
+  @include tablet {
+    width: 392px;
+    //left: 0;
+  }
+
+  @include mobile {
+    width: 275px;
+    //left: 0;
+  }
+}
+
+.contact_us_header_desc__container {
+  @include xldesktop {
+    @include all_fonts_styles(41px, 700, AltoneBold, #050505);
+  }
+
+  @include desktop {
+    @include all_fonts_styles(41px, 700, AltoneBold, #050505);
+  }
+
+  @include tablet {
+    @include all_fonts_styles(34px, 700, AltoneBold, #050505);
+  }
+
+  @include mobile {
+    @include all_fonts_styles(17px, 700, WorkSans-Bold, #000);
+  }
+}
+
+
+.eforms_header_title__container {
+  @include xldesktop {
+    @include all_fonts_styles(24px, 700, inherit, $black-color);
+  }
+
+  @include desktop {
+    @include all_fonts_styles(24px, 700, inherit, $black-color);
+  }
+
+  @include tablet {
+    @include all_fonts_styles(24px, 700, inherit, $black-color);
+  }
+
+  @include mobile {
+    @include all_fonts_styles(18px, 700, inherit, $black-color);
+  }
+}
+
+.eforms_header_desc__container {
+  @include xldesktop {
+    @include all_fonts_styles(14px, 500, inherit, $black-color);
+  }
+
+  @include desktop {
+    @include all_fonts_styles(14px, 500, inherit, $black-color);
+  }
+
+  @include tablet {
+    @include all_fonts_styles(14px, 500, inherit, $black-color);
+  }
+
+  @include mobile {
+    @include all_fonts_styles(13px, 500, inherit, $black-color);
+  }
+}
+
+.eforms_header_desc__direction_container {
+  @include all_fonts_styles(34px, 700, SSansBold, $black-color);
+
+  @include tablet {
+    @include all_fonts_styles(34px, 700, SSansBold, $black-color);
+  }
+
+  @include mobile {
+    @include all_fonts_styles(24px, 700, SSansBold, $black-color);
+  }
+}
+
+.eform_header_layer {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: rgba($color: #ffe6029f, $alpha: 0.4);
+}
+
+.eforms_header_desc__style {
+  @include all_fonts_styles($fs-md, $fw-normal, Corbert, $white-color);
+}
+
+.eforms_header_desc_img__style {
+  position: absolute;
+  bottom: -50px;
+  right: 50px;
+  z-index: -1;
+}
+
+// .eform_div__custom_select {
+//   display: flex;
+//   justify-content: center;
+//   align-items: center;
+//   position: absolute;
+//   right: -10px;
+//   top: 5px;
+//   @include hexagon_generator($yellow-color, 46px, 40px);
+//   &::after {
+//     content: "";
+//     @include hexagon_generator($black-color, 44px, 38px);
+//   }
+// }
+.eforms_image_patern {
+  position: absolute;
+  bottom: 0;
+  left: 44px;
+  z-index: -1;
+  opacity: 0.9;
+}
+
+.forms_container_back {
+  box-shadow: 0px 0px 30px #00000029;
+  background-color: #fff;
+  border-radius: 20px;
+
+  &::after {
+    content: "";
+    top: -8px;
+    left: 0;
+    background-color: #CC2A22;
+    height: 30px;
+    width: 147px;
+    z-index: -1;
+    border-radius: 20px 20px 0 0;
+    position: absolute;
+  }
+}
+
+.direction_container_back {
+  box-shadow: 0px 0px 30px #00000029;
+  background-color: #fff;
+  border-radius: 20px;
+}
+
+
+
+.direction_bg {
+  background: #ffffff;
+  box-shadow: 0px 5px 30px #00000029;
+}
+
+.eform_title_h4__style {
+  text-shadow: 0px 3px 6px rgba($color: #000000, $alpha: 0.5);
+  position: relative;
+  padding-left: 10px !important;
+  line-height: 30px;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 5px;
+    background-color: $yellow-color;
+  }
+
+  @include desktop {
+    & {
+      @include all_fonts_styles($fs-xxmd, 500, Montserrat, $white-color);
+    }
+  }
+
+  @include tablet {
+    & {
+      @include all_fonts_styles($fs-xxmd, 500, Montserrat, $white-color);
+    }
+  }
+
+  @include mobile {
+    & {
+      @include all_fonts_styles($fs-md, 500, Montserrat, $white-color);
+    }
+  }
+}
+
+.eforms_list_div__container {
+  background-color: $xx-dark-gray-color;
+  margin-left: 2.3rem;
+  height: 100%;
+
+  @include mobile {
+    & {
+      margin-left: 0;
+    }
+  }
+}
+
+.eform_list_inputs_div__container {
+  background-color: $xx-gray-color;
+  border-radius: 5px;
+}
+
+.service_plus-btn {
+  width: 46px;
+  height: 46px;
+  background-color: #111111;
+  cursor: pointer;
+
+  @include mobile {
+    border-left: 10px solid #000;
+    width: 56px !important;
+  }
+}
+
+.eform_list_input_req__container,
+.eform_list_input_req__container:focus {
+  border-bottom: 2px solid rgba($color: #000fff, $alpha: 0.2);
+  border-right: 2px solid rgba($color: #000fff, $alpha: 0.2);
+  border-radius: 0;
+}
+
+.eform_list_input_com__container,
+.eform_list_input_com__container:focus {
+  border-right: 2px solid rgba($color: #000fff, $alpha: 0.2);
+  border-radius: 0;
+}
+
+.eform_list_trash_icon__style {
+  color: $yellow-color;
+}
+
+.text_us_header {
+  @include xldesktop {
+    @include all_fonts_styles(28px, 700, SSansBold, $black-color);
+  }
+
+  @include desktop {
+    @include all_fonts_styles(28px, 700, SSansBold, $black-color);
+  }
+
+  @include tablet {
+    @include all_fonts_styles(24px, 700, SSansBold, $black-color);
+  }
+
+  @include mobile {
+    @include all_fonts_styles(22px, 700, SSansBold, $black-color);
+  }
+
+}
+
+.eform_form_header_div__conatiner {
+  position: relative;
+
+  @include all_fonts_styles(20px, 700, SSansBold, $black-color);
+
+  @include tablet {
+    & {
+      font-size: $fs-xxmd;
+    }
+  }
+
+  @include mobile {
+    & {
+      font-size: $fs-xxmd;
+    }
+  }
+}
+
+.main__ourteam_border {
+  border: 2px solid $black-color;
+}
+
+.main__ourteam_bg {
+  background-image: url("/images/ourteam/Component 8.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 18rem;
+
+  @include mobile {
+    height: 22rem;
+  }
+}
+
+.eform_ourcontacts_button__submit {
+  background-color: transparent;
+  border: 2px solid $light-red-color;
+  border-radius: 0 !important;
+  @include all_fonts_styles(18px, 600, SSans, $light-red-color);
+
+  &:hover {
+    @include all_fonts_styles(18px, 600, SSans, $light-red-color);
+  }
+}

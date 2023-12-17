@@ -1,0 +1,532 @@
+.home_div__about_container {
+  & > p {
+    @include all_fonts_styles($fs-md, 400, Corbert, $white-color);
+    line-height: 25px;
+  }
+}
+.home_a__about {
+  @include yellow_button(5px, $gray-color);
+  height: 45px;
+  position: relative;
+  @include all_fonts_styles($fs-md, 400, Corbert, $white-color);
+  & > div {
+    position: relative;
+    right: -20px;
+    top: 50%;
+    transform: translateY(-50%);
+    @include hexagon_generator($black-color, 53px, 45px);
+    background-color: $yellow-color;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    &::after {
+      display: block;
+      @include hexagon_generator($black-color, 50px, 42px);
+      content: "";
+    }
+  }
+  &:hover {
+    @include all_fonts_styles($fs-md, 400, Corbert, $black-color);
+  }
+}
+@include desktop {
+  .home_div__about_container {
+    min-height: 500px;
+    background-image: url("/images/home/about-us-texture.png");
+    background-position: right bottom;
+    background-repeat: no-repeat;
+    background-size: 50%;
+    background-attachment: fixed;
+    & > div > img {
+      transform: translateX(100px);
+    }
+  }
+}
+@include tablet {
+}
+@include mobile {
+}
+/*------------------------------------*/
+fieldset {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  padding: 1rem 0;
+  border: 1px solid $black-color;
+  margin: 1rem;
+  height: 90%;
+}
+legend {
+  width: 30%;
+}
+.about-us-home-backgroundimage {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.overlate-aboutus {
+  backdrop-filter: blur(0px);
+  background-color: transparent !important;
+  position: relative;
+  top: 0px;
+  right: 0px;
+  height: 80%;
+  width: 80%;
+  color: white;
+}
+.aboutus-text {
+  width: 100%;
+  height: 100%;
+  background-image: url("/images/new/bmw.jpg");
+  background-repeat: no-repeat;
+  object-fit: cover;
+}
+.home_about_section_background-style {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  z-index: 53;
+}
+.about_page_text-limit {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  line-height: 20px; /* fallback */
+  max-height: 100px; /* fallback */
+  -webkit-line-clamp: 2; /* number of lines to show */
+  -webkit-box-orient: vertical;
+  transition: all 0.5 ease;
+}
+@media screen and (min-width: 1440px) {
+  .overlate-aboutus {
+    backdrop-filter: blur(0px);
+    background-color: transparent !important;
+    // position: relative;
+    top: 0px;
+    right: 0px;
+    height: 80%;
+    width: 80%;
+    color: white;
+  }
+  .vehicle-form-service-appointment-btn {
+    p {
+      font-size: 14px !important;
+    }
+  }
+  .aboutus-image-customer-web {
+    width: 550px;
+    height: 550px;
+    z-index: 6;
+  }
+  .aboutus-image-customer-web-line-image {
+    width: 20rem;
+    height: 20rem;
+  }
+  .title-aboutus-customer-web {
+    color: $black-color;
+    font-size: 34px;
+    font: bold;
+    padding-left: 1rem;
+  }
+  .text-aboutus-customer-web {
+    color: $light-blue-color;
+    font-size: 16px;
+  }
+  .aboutus-text {
+    background-color: $black-color;
+  }
+  .aboutus-image-customer-web-line {
+    position: relative;
+    z-index: 5;
+    top: -5rem;
+    transform: rotate(-5deg);
+    left: 14%;
+  }
+  .aboutus-image-customer-web-line-two {
+    position: relative;
+    z-index: 5;
+    bottom: -5rem;
+    transform: rotate(-5deg);
+    left: 0;
+  }
+  .aboutus-image-customer-web-line-image-two {
+    width: 20rem;
+    height: 20rem;
+  }
+}
+@media screen and (min-width: 1200px) and (max-width: 1439px) {
+  .overlate-aboutus {
+    backdrop-filter: blur(0px);
+    background-color: transparent !important;
+    position: relative;
+    top: 0px;
+    right: 0px;
+    height: 80%;
+    width: 80%;
+    color: white;
+  }
+  .vehicle-form-service-appointment-btn {
+    p {
+      font-size: 14px !important;
+    }
+  }
+  .aboutus-image-customer-web-line-image {
+    width: 20rem;
+    height: 20rem;
+  }
+  .aboutus-image-customer-web-line {
+    position: relative;
+    z-index: 5;
+    top: -5rem;
+    transform: rotate(-5deg);
+    left: 13%;
+  }
+  .aboutus-image-customer-web-line-two {
+    position: relative;
+    z-index: 5;
+    bottom: -5rem;
+    transform: rotate(-5deg);
+    left: 0;
+  }
+  .aboutus-image-customer-web-line-image-two {
+    width: 20rem;
+    height: 20rem;
+  }
+  .aboutus-image-customer-web {
+    width: 550px;
+    height: 550px;
+    z-index: 6;
+  }
+  .title-aboutus-customer-web {
+    color: $light-blue-color;
+    font-size: 34px;
+    font: bold;
+    padding-left: 1rem;
+  }
+  .text-aboutus-customer-web {
+    color: $light-blue-color;
+    font-size: 16px;
+  }
+  .aboutus-text {
+    background-color: $black-color;
+  }
+}
+@media screen and (min-width: 769px) and (max-width: 920px) {
+  .overlate-aboutus {
+    backdrop-filter: blur(0px);
+    background-color: transparent !important;
+    position: relative;
+    top: 0px;
+    right: 0px;
+    height: 80%;
+    width: 80%;
+    color: white;
+  }
+  .vehicle-form-service-appointment-btn {
+    p {
+      font-size: 20px !important;
+    }
+  }
+  .aboutus-image-customer-web {
+    width: 400px;
+    height: 400px;
+  }
+  .title-aboutus-customer-web {
+    color: $light-blue-color;
+    font-size: 34px;
+    font: bold;
+    padding-left: 1rem;
+  }
+  .text-aboutus-customer-web {
+    width: auto;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box !important;
+    -webkit-line-clamp: 5; /* number of lines to show */
+    -webkit-box-orient: vertical;
+    word-wrap: break-word;
+    color: $light-blue-color;
+    font-size: 16px;
+  }
+  .aboutus-text {
+    background-color: $black-color;
+  }
+}
+@media screen and (min-width: 921px) and (max-width: 1067px) {
+  .overlate-aboutus {
+    backdrop-filter: blur(0px);
+    background-color: transparent !important;
+    position: relative;
+    top: 0px;
+    right: 0px;
+    height: 80%;
+    width: 80%;
+    color: white;
+  }
+  .vehicle-form-service-appointment-btn {
+    p {
+      font-size: 20px !important;
+    }
+  }
+  .aboutus-image-customer-web {
+    width: 450px;
+    height: 450px;
+    z-index: 6;
+  }
+  .title-aboutus-customer-web {
+    color: $light-blue-color;
+    font-size: 34px;
+    font: bold;
+    padding-left: 1rem;
+  }
+  .text-aboutus-customer-web {
+    width: auto;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box !important;
+    -webkit-line-clamp: 5; /* number of lines to show */
+    -webkit-box-orient: vertical;
+    word-wrap: break-word;
+    color: $light-blue-color;
+    font-size: 16px;
+  }
+  .aboutus-text {
+    background-color: $black-color;
+  }
+  .aboutus-image-customer-web-line-image {
+    width: 20rem;
+    height: 20rem;
+  }
+  .aboutus-image-customer-web-line {
+    position: relative;
+    z-index: 5;
+    top: -5rem;
+    transform: rotate(-5deg);
+    left: 13%;
+  }
+  .aboutus-image-customer-web-line-two {
+    position: relative;
+    z-index: 5;
+    bottom: -5rem;
+    transform: rotate(-5deg);
+    left: 0;
+  }
+  .aboutus-image-customer-web-line-image-two {
+    width: 20rem;
+    height: 20rem;
+  }
+}
+@media screen and (min-width: 1068px) and (max-width: 1199px) {
+  .overlate-aboutus {
+    backdrop-filter: blur(0px);
+    background-color: transparent !important;
+    position: relative;
+    top: 0px;
+    right: 0px;
+    height: 80%;
+    width: 80%;
+    color: white;
+  }
+  .vehicle-form-service-appointment-btn {
+    p {
+      font-size: 20px !important;
+    }
+  }
+  .aboutus-image-customer-web-line-image {
+    width: 20rem;
+    height: 20rem;
+  }
+  .aboutus-image-customer-web-line {
+    position: relative;
+    z-index: 5;
+    top: -5rem;
+    transform: rotate(-5deg);
+    left: 9%;
+  }
+  .aboutus-image-customer-web-line-two {
+    position: relative;
+    z-index: 5;
+    bottom: -5rem;
+    transform: rotate(-5deg);
+    left: 0;
+  }
+  .aboutus-image-customer-web-line-image-two {
+    width: 20rem;
+    height: 20rem;
+  }
+  .aboutus-image-customer-web {
+    width: 450px;
+    height: 450px;
+    z-index: 6;
+  }
+  .title-aboutus-customer-web {
+    color: $light-blue-color;
+    font-size: 34px;
+    font: bold;
+    padding-left: 1rem;
+  }
+  .text-aboutus-customer-web {
+    width: auto;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box !important;
+    -webkit-line-clamp: 5; /* number of lines to show */
+    -webkit-box-orient: vertical;
+    word-wrap: break-word;
+    color: $light-blue-color;
+    font-size: 16px;
+  }
+  .aboutus-text {
+    background-color: $black-color;
+  }
+}
+@media screen and (max-width: 450px) {
+  legend {
+    width: 80%;
+  }
+  .overlate-aboutus {
+    backdrop-filter: blur(0px);
+    background-color: transparent !important;
+    position: relative;
+    top: 0px;
+    right: 0px;
+    height: 80%;
+    width: 80%;
+    color: white;
+  }
+  .vehicle-form-service-appointment-btn {
+    p {
+      font-size: 14px !important;
+    }
+  }
+  .aboutus-image-customer-web {
+    width: 100%;
+    height: 100%;
+  }
+  .overlate-aboutus-text {
+    font-size: 9px;
+    color: white;
+    display: -webkit-box !important;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+  }
+  .title-aboutus-customer-web {
+    color: $light-blue-color;
+    font-size: 13px;
+    font: bold;
+    padding-left: 1rem;
+    text-align: center !important;
+  }
+  .text-aboutus-customer-web {
+    width: auto;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box !important;
+    -webkit-line-clamp: 5; /* number of lines to show */
+    -webkit-box-orient: vertical;
+    word-wrap: break-word;
+    color: $light-blue-color;
+    font-size: 13px;
+  }
+  .aboutus-text {
+    background-color: $black-color;
+    text-align: center !important;
+  }
+}
+@media screen and (min-width: 451px) and (max-width: 667px) {
+  legend {
+    width: 40%;
+  }
+  .overlate-aboutus {
+    backdrop-filter: blur(0px);
+    background-color: transparent !important;
+    position: relative;
+    top: 0px;
+    right: 0px;
+    height: 80%;
+    width: 80%;
+    color: white;
+  }
+  .vehicle-form-service-appointment-btn {
+    p {
+      font-size: 20px !important;
+    }
+  }
+  .aboutus-image-customer-web {
+    width: 300px;
+    height: 300px;
+  }
+  .overlate-aboutus-text {
+    font-size: 9px;
+    color: white;
+  }
+  .title-aboutus-customer-web {
+    color: $light-blue-color;
+    font-size: 18px;
+    font: bold;
+    padding-left: 1rem;
+  }
+  .text-aboutus-customer-web {
+    width: auto;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box !important;
+    -webkit-line-clamp: 5; /* number of lines to show */
+    -webkit-box-orient: vertical;
+    word-wrap: break-word;
+    color: $light-blue-color;
+    font-size: 16px;
+  }
+  .aboutus-text {
+    background-color: $black-color;
+  }
+}
+@media screen and (min-width: 668px) and (max-width: 768px) {
+  legend {
+    width: 40%;
+  }
+  .overlate-aboutus {
+    backdrop-filter: blur(0px);
+    background-color: transparent !important;
+    position: relative;
+    top: 0px;
+    right: 0px;
+    height: 80%;
+    width: 80%;
+    color: white;
+  }
+  .vehicle-form-service-appointment-btn {
+    p {
+      font-size: 20px !important;
+    }
+  }
+  .aboutus-image-customer-web {
+    width: 337px;
+    height: 337px;
+  }
+  .overlate-aboutus-text {
+    font-size: 11.5px;
+    color: white;
+  }
+  .title-aboutus-customer-web {
+    color: $light-blue-color;
+    font-size: 34px;
+    font: bold;
+    padding-left: 1rem;
+  }
+  .text-aboutus-customer-web {
+    width: auto;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box !important;
+    -webkit-line-clamp: 5; /* number of lines to show */
+    -webkit-box-orient: vertical;
+    word-wrap: break-word;
+    color: $light-blue-color;
+    font-size: 13px;
+  }
+  .aboutus-text {
+    background-color: $black-color;
+  }
+}

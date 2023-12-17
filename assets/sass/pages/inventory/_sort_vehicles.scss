@@ -1,0 +1,39 @@
+.inventory_count_div__container {
+  @include all_fonts_styles(24px, bold, AltoneBold, $black-color);
+}
+
+.inventory_sort_div__container {
+  background-color: #fff;
+  box-shadow: 0px 0px 30px #00000029;
+  border-radius: 20px;
+}
+
+.inventory_count_div__txt {
+  @include all_fonts_styles(21px, bold, AltoneBold, #CC2A22);
+}
+
+.inventory_sort_button__container {
+  @include all_fonts_styles(21px, 300, SSansLight, $black-color);
+  background-color: transparent;
+  color: $black-color;
+  border: none;
+  border-right: 2px solid rgba(0, 0, 0, 0.601);
+
+  &:hover {
+    color: #1b6939;
+  }
+}
+
+.ASC {
+  background-color: $yellow-x-color;
+  border-top: 3px solid $black-color;
+
+  outline-offset: 3px;
+  // outline: 2px solid $x-light-gray;
+}
+
+.DESC {
+  border-bottom: 3px solid $black-color;
+  // outline: 2px solid $x-light-gray;
+  // outline-offset: 1px;
+}

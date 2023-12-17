@@ -1,0 +1,75 @@
+.google_review_card-style {
+  background-color: transparent;
+  // border-radius: 20px;
+  color: $black-color;
+}
+.rate_blog-google {
+  background-color: $light-blue-color;
+}
+.review_rate-google {
+  background-color: $white-color;
+  color: $light-blue-color;
+  transform: scale(1);
+  transition: 1s ease-in-out;
+  backface-visibility: hidden;
+}
+.review_rate-google:hover {
+  color: $light-blue-color !important;
+  // text-shadow: 2px $blue_col
+  transform: scale(1.05);
+  transition: 1s ease-in-out;
+  box-shadow: -11px 4px 53px 0px #fff;
+  -webkit-box-shadow: -11px 4px 53px 0px #fff;
+  -moz-box-shadow: -11px 4px 53px 0px #fff;
+}
+.link_to_google_review-style {
+  color: $white-color;
+  position: relative;
+  left: -3rem;
+}
+.link_to_google_review-style:hover {
+  color: $light-blue-color !important;
+}
+.link_to_google_review-style:hover {
+  color: #f4f4f4;
+}
+.text_limit_google_review-desc {
+  @include all_fonts_styles(16px, 400, SSans, $black-color);
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 4; /* number of lines to show */
+  line-clamp: 4;
+  -webkit-box-orient: vertical;
+}
+// .google_review_divider-style {
+//   // border-bottom: 2px solid #f4f4f4;
+// }
+.google_fullname {
+  @include all_fonts_styles(16px, 400, inherit, $white-color);
+}
+.info {
+  background-color: #000;
+  border-radius: 50px;
+}
+.background_style-googlereview {
+  & > div {
+    & > h3 {
+      @include all_fonts_styles(34px, 600, SSansBold, $black-color);
+    }
+    & > p {
+      @include all_fonts_styles(21px, $fw-medium, inherit, $black-color);
+    }
+  }
+}
+.swiperslide_content {
+  background-color: #f2f2f2;
+}
+.swiperslide_content-active {
+  background-color: #f2f2f2 !important;
+}
+.google_rev_btn,
+.google_rev_btn:hover {
+  @include all_fonts_styles(16px, 600, SSansBold, $yellow-color);
+  border-bottom: 1px solid $yellow-color;
+}
